@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a = "hello";
+        document.writeln(a);
+        console.log(a);
+    </script>
+</head>
+<body>
+    <div class="main">
+        <div id="parent">
+
+        </div>
+    </div>
+</body>
+<script>
+fetch('data.json').then(response => response.json())
+.then(data=> details(data))
+
+
+var main=document.querySelector('.main')
+var parent=document.getElementById('parent')
+
+function details(info){
+    var heading=document.createElement('h1');
+    var age=document.createElement('h2');
+    heading.textContent=info.name;
+    parent.appendChild(heading);
+    age.textContent=info.age;
+    parent.appendChild(age);
+    main.appendChild(parent);
+}
+</script>
+</html>

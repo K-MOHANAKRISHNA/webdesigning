@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       /* function addition(x,y){
+            return x+y
+        }
+        document.writeln(addition(3,4)) */
+
+        // anonymous function
+
+        /*let addition=function(x,y){
+            return x+y
+        }
+        document.writeln(addition(4,4))*/
+
+        //arrow function
+       /* let addition = (x,y) => {
+            return x+y
+        }
+        document.writeln(addition(5,4)) */
+
+
+        //destructuring of Objects
+
+        let employee={
+            name :"nani",
+            age : 22
+        }
+        // let name=employee.name;
+
+        let {name,age}=employee
+        console.log(name);
+        console.log(age);
+
+        //destructing of array
+
+        let employees=["chaithu","mohana","krishna"]
+        //let emp1=employee[0]
+        let [emp1,emp2,emp3]=employees
+        console.log(emp1)
+    </script>
+</body>
+</html>

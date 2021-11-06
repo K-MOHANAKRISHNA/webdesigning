@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex div{ 
+            border: 2px solid black;
+            padding-left: 1%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            padding-right: 2%;
+           /* padding: auto; padding: 2% 4% (clockwise,top,right,bottom,left); */
+            margin: 2% 4% 6% 8%;
+            font-size: 30px;
+            background-color: skyblue;
+        }
+
+        .flex{
+            display: flex;
+            /* row row reverse column column reverse*/
+            flex-direction: row;
+            justify-content: center; /* flex-end flex-start space-around space-between space-evenly*/
+            flex-wrap: wrap; /* wrap-reverse  nowrap*/
+            /* upto now we have done operations for horizontal*/
+            /* now column wise*/
+/*coloumn or vertical opertaions */
+        }
+        .flex1 div{
+            border: 2px solid black;
+            padding: 2%;
+            font-size:  100%;
+            margin: 2% 4% 6% 8%;
+            background-color: rgb(36, 112, 143);
+        }
+        .flex1{
+            height: 500px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;            /* align items is for individual items* flex end , flex start , center*/
+            align-content: space-between;        /* align content is for overall content*/
+        }
+    </style>
+</head>
+<body>
+  <div class="flex">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+  </div>  
+  <div class="flex1">
+    <div>A</div>
+    <div>B</div>
+    <div>C</div>
+    <div>D</div>
+    <div>A</div>
+    <div>B</div>
+    <div>C</div>
+    <div>D</div>
+    <div>A</div>
+    <div>B</div>
+    <div>C</div>
+    <div>D</div>
+    <div>A</div>
+    <div>B</div>
+    <div>C</div>
+    <div>D</div>
+</div> 
+</body>
+</html>
